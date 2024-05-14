@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/createformstyle.css">
+  
+    <title>Create Form</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="left-side-bar" id="leftsidebar">
+            <a href="home.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <!-- <button><a href="home.html"><p>button</p></a></button> -->
+        </div>
+
+        <div class="header">
+            <input type="text" placeholder="Untitled Form">
+            <div class="timer-display">
+                <!-- <input type="date"> -->
+                <p class="timer"><button>Set timer: 00 : 00 : 00<i class='bx bx-timer'></i></button></p>
+            </div>
+        </div>
+        
+        
+        <div class="containers">
+
+            <div class="right-side-bar">
+                <div class="button-add" id="add_button">
+                    <i class='bx bx-plus-circle' onclick="myFunction()"></i>
+                </div>
+
+                <div class="button-image">
+                    <i class='bx bx-image-alt'></i>
+                </div>
+                
+                <div class="button-text">
+                    <i class='bx bx-text' ></i>
+                </div>
+
+                <div class="button-submit">
+                    <i class='bx bx-check-circle'></i>
+                </div>
+            </div>
+
+            <div class="form-description">
+                <input type="text" placeholder="Form Description">
+                <i class='bx bx-edit'></i>
+            </div>
+
+            <div class="question-form" id="demo">
+                
+                <input class="question-title" type="text" placeholder="Untitled Question">
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">Multiple choice</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu"><li class="active">Multiple choice</li>
+                        <li>Short answer</li>
+                        <li>Paragraph</li>
+                        <li>Checkboxes</li>
+                        <li>Dropdown</li>
+                        <li>File Upload</li>
+                    </ul>
+                    <script src="dropdown.js"></script>
+                </div>
+                
+                <br><br>
+
+                <div class="choices" id="questionOptions">
+                    <input type="radio" name="rdMultipleChoice" id="rdMultipleChoice">
+                    <input type="text" name="txtOption1" id="txtOption1" placeholder="Option 1">
+                    <i class="fa-solid fa-xmark" style="margin-left: 40px;"></i>
+                </div>
+
+                <br>
+                <div class="add-btn-options" id="add-question-btn">
+                    <i class='bx bx-plus-circle'><label style="margin-left: 20px;">Add Option</label></i>
+                </div>
+                <script src="addOptionbtn.js"></script>
+
+                <div class="bottom-icon">
+                    <i class='bx bx-shuffle'></i>
+                    <i class="fa-solid fa-copy" onclick="myFunction()"></i>
+                    <i class='bx bx-trash'></i>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- <script>
+        function adjustSidebarHeight() {
+            var leftSideBar = document.getElementById("leftSideBar");
+            var contentHeight = document.getElementById("add_button").offsetHeight;
+            leftSideBar.style.minHeight = contentHeight + "px";
+        }
+
+        function myFunction() {
+            // Code to add content here
+            // For demonstration purpose, I'm just adding a div with some text
+            var contentDiv = document.createElementById("demo");
+            // contentDiv.textContent = "New content added dynamically.";
+            document.getElementById("content").appendChild(contentDiv);
+
+            // After adding content, adjust the sidebar height
+            adjustSidebarHeight();
+        }
+
+        // Call adjustSidebarHeight when the page loads
+        window.onload = adjustSidebarHeight;
+    </script> -->
+
+    
+
+    <script>
+        function myFunction() {
+          const node = document.getElementById("demo");
+          const clone = node.cloneNode(true);
+          document.body.appendChild(clone);
+        }
+    </script>
+
+    
+</body>
+</html>

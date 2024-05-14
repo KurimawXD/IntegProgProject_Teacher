@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="img/png" href="img/KIEOPI HUB.jpg">
+	<title> Integrative Programming</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">			
+			<div class="search-container">
+				<button><i class="fa-solid fa-magnifying-glass"></i></button>
+				<input type="text" placeholder="Search">
+			</div>
+
+			<div class="buttons">
+				<div class="button-notification">
+					<i class="fa-solid fa-bell"></i>
+				</div>
+
+				<div class="button-settings">
+					<i class="fa-solid fa-gear"></i>
+				</div>
+
+				<div class="button-user">
+					<input type="file">
+					<i class="fa-solid fa-user"></i>
+				</div>			
+					
+				<div class="user-name">
+					<h2>Albert Mendoza Malacas</h2>
+					<p>Teacher</p>
+				</div> 
+			</div>	
+		</div>
+
+		<div class="container">
+			<div class="left-containers">
+				<div class="box-1">
+					<div class="create-button">
+						<h1>Create Exam</h1>
+						<!-- <button class="fa-solid fa-circle-plus"><a href="createform.html">Create</a></button> -->
+						<button class="fa-solid fa-circle-plus" onclick="window.location.href = 'createform.html';"><p>Create</p></button>
+						<h1>Recent Form</h1>
+					</div>
+				</div>
+
+				<div class="box-2">
+					<h1>Reports</h1>
+					
+				</div>
+			</div>
+
+			<div class="middle-container">
+				<div class="box-3">
+					<h1>Exams</h1>
+					<div class="teacher-exams">
+						<div class="exams">
+
+							<div class="exam-title" onclick="ShowHideFunction()">
+								
+								<div class="title-description">
+									<h4>Example Midterm Examination</h4>
+								</div>
+
+								<div class="exam-details">
+									<p>( 100 items)</p>
+									<div class="exam-time">
+										<i class='bx bx-time-five'></i>
+										<p>3 hours</p>
+									</div>
+									<p>11:00 am</p>
+									<p>18th Mar 2024</p>
+								</div>
+								<script src="showhide.js"></script>
+							</div>
+							
+							<div class="student-taked-exam" id="student-take-exam">
+
+								<div class="tablehead-student-take-exam">	
+									<table>
+										<thead>
+											<tr>
+												<th>#</th>
+												<th class="th-2">Name</th>
+												<th>Score</th>
+												<th>Time</th>
+												<th>Grade</th>
+											</tr>
+										</thead>
+									</table>					
+								</div>
+								<div class="table-student-take-exam">
+									<table>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											
+											
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="exam-title" onclick="ShowHideFunction2()">
+								
+								<div class="title-description">
+									<h4>Example Midterm Examination</h4>
+								</div>
+
+								<div class="exam-details">
+									<p>( 100 items)</p>
+									<div class="exam-time">
+										<i class='bx bx-time-five'></i>
+										<p>3 hours</p>
+									</div>
+									<p>11:00 am</p>
+									<p>18th Mar 2024</p>
+								</div>
+								<script src="showhide.js"></script>
+							</div>
+
+							<div class="student-taked-exam" id="student-take-exam2">
+								<div class="tablehead-student-take-exam">	
+									<table>
+										<thead>
+											<tr>
+												<th>#</th>
+												<th class="th-2">Name</th>
+												<th>Score</th>
+												<th>Time</th>
+												<th>Grade</th>
+											</tr>
+										</thead>
+									</table>					
+								</div>
+								<div class="table-student-take-exam">
+									<table>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td class="name">John Juswa Mendoza</td>
+												<td>100/100</td>
+												<td>10:48 am</td>
+												<td>1.8</td>
+											</tr>
+											
+											
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+				</div>
+			</div>
+
+			<div class="right-container">
+				<div class="box-4">
+					<h1>Calendar</h1>
+					<div class="calendar">
+						<header>
+							<h3></h3>
+							<nav>
+								<button id="prev"></button>
+								<button id="next"></button>
+							</nav>
+						</header>
+						<section>
+							<ul class="days">
+								<li>Sun</li>
+								<li>Mon</li>
+								<li>Tue</li>
+								<li>Wed</li>
+								<li>Thu</li>
+								<li>Fri</li>
+								<li>Sat</li>
+							</ul>
+							<ul class="dates"></ul>
+						</section>
+					</div>
+					<script src="script.js" defer></script>	
+				</div>
+
+				<div class="box-5">
+					<div class="top-box5">
+						<h1>Subjects</h1>
+						<i class='bx bx-plus-circle' id="modalButton"></i>
+					</div>
+
+					<div id="myModal" class="modal">
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<br><br>
+							<p>Subject Name</p>
+							<input type="text">
+							<br>
+							<p>Subject Code</p>
+							<input type="text" disabled>
+							<br><br>
+							<button>Create Subject</button>
+
+
+						</div>
+					<script src="modal.js"></script>
+					</div>
+
+					<div class="table-box5">
+
+						<div class="Table-subjects">
+							<table>
+								<tbody>
+									<tr>
+										<td class="subjects">Integrative Programming</td>
+										<td id="sbj-code">1234qwer</td>
+									</tr>
+									<tr>
+										<td class="subjects">Integrative Programming</td>
+										<td id="sbj-code">1234qwer</td>
+									</tr>
+									<tr>
+										<td class="subjects">Integrative Programming</td>
+										<td id="sbj-code">1234qwer</td>
+									</tr>
+									<tr>
+										<td class="subjects">Integrative Programming</td>
+										<td id="sbj-code">1234qwer</td>
+									</tr>
+									<tr>
+										<td class="subjects">Integrative Programming</td>
+										<td id="sbj-code">1234qwer</td>
+									</tr>
+									<tr>
+										<td class="subjects">Integrative Programming</td>
+										<td id="sbj-code">1234qwer</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="box-6">
+					<h1>Students Enrolled</h1>
+					<div class="dropdown">
+						<div class="select">
+							<span class="selected">BSI/T - 2B</span>
+							<div class="caret"></div>
+						</div>
+						<ul class="menu">
+							<li>BSI/T - 2A</li>
+							<li class="active">BSI/T - 2B</li>
+							<li>BSI/T - 2C</li>
+							<li>BSI/T - 2D</li>
+						</ul>
+					<script src="dropdown.js"></script>		
+					</div>
+
+
+					<div class="tablehead">	
+						<table>
+							<thead>
+								<tr>
+									<th>#</th>
+									<th class="th-2">Name</th>
+									<th>Student ID</th>
+								</tr>
+							</thead>
+						</table>					
+					</div>
+
+					<div class="Table">
+						<table>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td class="name">John Juswa Mendoza</td>
+									<td>22B0999</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="name">John Juswa Mendoza</td>
+									<td>22B0999</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="name">John Juswa Mendoza</td>
+									<td>22B0999</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="name">John Juswa Mendoza</td>
+									<td>22B0999</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="name">John Juswa Mendoza</td>
+									<td>22B0999</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="name">John Juswa Mendoza</td>
+									<td>22B0999</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="name">John Juswa Mendoza</td>
+									<td>22B0999</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="name">John Juswa Mendoza</td>
+									<td>22B0999</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="name">John Juswa Mendoza</td>
+									<td>22B0999</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="name">John Juswa Mendoza</td>
+									<td>22B0999</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="name">John Juswa Mendoza</td>
+									<td>22B0999</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="name">John Juswa Mendoza</td>
+									<td>22B0999</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="name">John Juswa Mendoza</td>
+									<td>22B0999</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>	
+</body>
+</html>
